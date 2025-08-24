@@ -40,19 +40,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "arjun.sharma@email.com",
-      href: "mailto:arjun.sharma@email.com",
+      value: "lokeshyadla403@gmail.com",
+      href: "mailto:lokeshyadla403@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 98765 43210",
-      href: "tel:+919876543210",
+      value: "+91 7396239664",
+      href: "tel:+917396239664",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Mumbai, India",
+      value: "Rajahmundry, India",
       href: "#",
     },
   ];
@@ -61,25 +61,19 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/lokeshyadla",
       color: "hover:text-gray-900",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/lokesh-yadla-5a36ab348",
       color: "hover:text-blue-600",
-    },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com",
-      color: "hover:text-blue-400",
     },
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:arjun.sharma@email.com",
+      href: "mailto:lokeshyadla403@gmail.com",
       color: "hover:text-red-500",
     },
   ];
@@ -107,9 +101,9 @@ const Contact = () => {
               </h3>
               
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                I'm always excited to connect with fellow developers, researchers, and innovators. 
+                I'm always excited to connect with fellow developers and tech enthusiasts. 
                 Whether you have a project in mind, want to collaborate, or just want to discuss 
-                the latest in AI and machine learning, I'd love to hear from you.
+                the latest in web development and MERN stack, I'd love to hear from you.
               </p>
 
               {/* Contact Details */}

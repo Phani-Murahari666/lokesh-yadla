@@ -1,6 +1,6 @@
 import { Download, Mail, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import profileImage from "@/assets/profile-image.jpg";
+const profileImage = "/lovable-uploads/6e328af3-c5b9-4210-9f80-78bab855352e.png";
 
 const Hero = () => {
   return (
@@ -22,7 +22,7 @@ const Hero = () => {
             <div className="w-48 h-48 mx-auto relative">
               <img
                 src={profileImage}
-                alt="Arjun Sharma - AI & ML Student"
+                alt="Lokesh Yadla - B.Tech Student"
                 className="w-full h-full rounded-full object-cover shadow-strong border-4 border-white"
               />
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20"></div>
@@ -31,16 +31,16 @@ const Hero = () => {
 
           {/* Name and Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-            <span className="text-foreground">Arjun</span>{" "}
-            <span className="gradient-text">Sharma</span>
+            <span className="text-foreground">Lokesh</span>{" "}
+            <span className="gradient-text">Yadla</span>
           </h1>
           
           <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-4">
-            B.Tech AI & ML Student
+            B.Tech Student • Class of 2027
           </h2>
           
           <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Aspiring AI Engineer | Deep Learning Enthusiast | Building the Future with Code
+            MERN Stack Developer | Web Development Enthusiast | CGPA: 7.5/10
           </p>
 
           {/* CTA Buttons */}
@@ -58,7 +58,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
             <a
-              href="https://github.com"
+              href="https://github.com/lokeshyadla"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-smooth hover:scale-110 transform"
@@ -66,7 +66,7 @@ const Hero = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/lokesh-yadla-5a36ab348"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-smooth hover:scale-110 transform"
@@ -74,7 +74,7 @@ const Hero = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:arjun.sharma@email.com"
+              href="mailto:lokeshyadla403@gmail.com"
               className="text-muted-foreground hover:text-primary transition-smooth hover:scale-110 transform"
             >
               <Mail size={24} />

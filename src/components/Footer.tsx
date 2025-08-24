@@ -28,10 +28,10 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Brand Section */}
             <div className="md:col-span-1">
-              <h3 className="text-2xl font-bold gradient-text mb-4">Arjun Sharma</h3>
+              <h3 className="text-2xl font-bold gradient-text mb-4">Lokesh Yadla</h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Passionate AI & ML student building innovative solutions for tomorrow's challenges. 
-                Always excited to learn, collaborate, and create.
+                Passionate web developer and B.Tech student building modern web applications. 
+                Always excited to learn, collaborate, and create innovative solutions.
               </p>
               <div className="flex items-center text-muted-foreground">
                 <span>Made with</span>
@@ -60,9 +60,9 @@ const Footer = () => {
             <div className="md:col-span-1">
               <h4 className="text-lg font-semibold text-foreground mb-4">Get in Touch</h4>
               <div className="space-y-2 text-muted-foreground">
-                <div>arjun.sharma@email.com</div>
-                <div>+91 98765 43210</div>
-                <div>Mumbai, India</div>
+                <div>lokeshyadla403@gmail.com</div>
+                <div>+91 7396239664</div>
+                <div>Rajahmundry, India</div>
               </div>
               
               {/* Back to Top Button */}
@@ -83,7 +83,7 @@ const Footer = () => {
           {/* Bottom Section */}
           <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <div className="text-muted-foreground text-sm mb-4 md:mb-0">
-              © 2024 Arjun Sharma. All rights reserved.
+              © 2024 Lokesh Yadla. All rights reserved.
             </div>
             
             <div className="text-muted-foreground text-sm">

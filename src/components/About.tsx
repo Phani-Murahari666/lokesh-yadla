@@ -15,44 +15,45 @@ const About = () => {
             {/* Text Content */}
             <div className="animate-slide-in">
               <h3 className="text-2xl font-semibold mb-6 text-foreground">
-                Passionate about AI & Machine Learning
+                Passionate about Web Development & MERN Stack
               </h3>
               
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  I'm a dedicated B.Tech student specializing in Artificial Intelligence and Machine Learning, 
-                  driven by a passion for creating intelligent solutions that can make a real difference in the world.
+                  I'm a dedicated B.Tech student at GIET Engineering College, Rajahmundry, graduating in 2027. 
+                  With a strong academic performance (CGPA: 7.5/10), I'm passionate about web development 
+                  and the MERN stack, constantly working to build innovative web applications.
                 </p>
                 
                 <p>
-                  My journey in tech began with curiosity about how machines can learn and adapt. 
-                  Since then, I've been exploring various domains including computer vision, natural language processing, 
-                  and deep learning architectures.
+                  My journey in web development focuses on creating responsive, user-friendly applications 
+                  using modern technologies. I've completed 2+ projects and am continuously expanding my 
+                  skills in full-stack development, always eager to learn new technologies and frameworks.
                 </p>
                 
                 <p>
-                  When I'm not coding, you'll find me reading research papers, contributing to open-source projects, 
-                  or experimenting with the latest AI frameworks. I believe in continuous learning and staying 
-                  updated with the rapidly evolving field of artificial intelligence.
+                  When I'm not coding, you'll find me exploring new web technologies, working on personal projects, 
+                  or contributing to the developer community. I believe in writing clean, maintainable code and 
+                  staying updated with the latest trends in web development.
                 </p>
               </div>
 
               {/* Quick Stats */}
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text">15+</div>
+                  <div className="text-3xl font-bold gradient-text">2+</div>
                   <div className="text-sm text-muted-foreground">Projects Completed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text">3.8</div>
+                  <div className="text-3xl font-bold gradient-text">7.5</div>
                   <div className="text-sm text-muted-foreground">CGPA</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text">5+</div>
+                  <div className="text-3xl font-bold gradient-text">10+</div>
                   <div className="text-sm text-muted-foreground">Technologies</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text">2024</div>
+                  <div className="text-3xl font-bold gradient-text">2027</div>
                   <div className="text-sm text-muted-foreground">Graduation Year</div>
                 </div>
               </div>
@@ -63,27 +64,27 @@ const About = () => {
               <div className="relative">
                 {/* Main card */}
                 <div className="card-glass p-8 rounded-2xl shadow-card">
-                  <h4 className="text-xl font-semibold mb-4 gradient-text">Academic Focus</h4>
+                  <h4 className="text-xl font-semibold mb-4 gradient-text">Technical Focus</h4>
                   <ul className="space-y-3">
                     <li className="flex items-center text-muted-foreground">
                       <div className="w-2 h-2 gradient-bg rounded-full mr-3"></div>
-                      Machine Learning Algorithms
+                      MERN Stack Development
                     </li>
                     <li className="flex items-center text-muted-foreground">
                       <div className="w-2 h-2 gradient-bg rounded-full mr-3"></div>
-                      Deep Neural Networks
+                      Responsive Web Design
                     </li>
                     <li className="flex items-center text-muted-foreground">
                       <div className="w-2 h-2 gradient-bg rounded-full mr-3"></div>
-                      Computer Vision
+                      RESTful API Development
                     </li>
                     <li className="flex items-center text-muted-foreground">
                       <div className="w-2 h-2 gradient-bg rounded-full mr-3"></div>
-                      Natural Language Processing
+                      Database Management
                     </li>
                     <li className="flex items-center text-muted-foreground">
                       <div className="w-2 h-2 gradient-bg rounded-full mr-3"></div>
-                      Data Science & Analytics
+                      Modern JavaScript Frameworks
                     </li>
                   </ul>
                 </div>

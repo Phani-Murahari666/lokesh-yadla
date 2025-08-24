@@ -4,52 +4,28 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const projects = [
     {
-      title: "Virtual Mouse using Gestures",
-      description: "Computer vision project that enables mouse control through hand gestures using MediaPipe and OpenCV. Features include click, scroll, and cursor movement detection.",
-      techStack: ["Python", "OpenCV", "MediaPipe", "TensorFlow"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      category: "Computer Vision",
+      title: "E-Commerce Web Application",
+      description: "Full-stack e-commerce platform built with MERN stack featuring user authentication, product catalog, shopping cart, and payment integration with Stripe.",
+      techStack: ["React", "Node.js", "Express", "MongoDB", "Stripe API", "JWT"],
+      github: "https://github.com/lokeshyadla",
+      demo: "https://ecommerce-demo.netlify.app",
+      category: "Full Stack",
     },
     {
-      title: "ESG Risk Analysis AI",
-      description: "Machine learning model to analyze Environmental, Social, and Governance risks for sustainable investment decisions using NLP and financial data.",
-      techStack: ["Python", "NLTK", "Scikit-learn", "Pandas", "Flask"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      category: "Finance AI",
+      title: "Task Management Dashboard",
+      description: "Responsive task management application with real-time updates, drag-and-drop functionality, and team collaboration features built using React and Firebase.",
+      techStack: ["React", "Firebase", "Material-UI", "React DnD", "Context API"],
+      github: "https://github.com/lokeshyadla",
+      demo: "https://taskmanager-demo.netlify.app",
+      category: "Frontend",
     },
     {
-      title: "Sentiment Analysis Dashboard",
-      description: "Real-time sentiment analysis system for social media data with interactive dashboard for visualization and trend monitoring.",
-      techStack: ["Python", "React", "D3.js", "Twitter API", "MongoDB"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      category: "NLP",
-    },
-    {
-      title: "Hologram Brain Visualization",
-      description: "3D brain visualization using holographic display technology for medical education and research purposes with AR integration.",
-      techStack: ["Unity", "C#", "ARCore", "Blender", "Python"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      category: "AR/VR",
-    },
-    {
-      title: "Smart Attendance System",
-      description: "Automated attendance tracking using facial recognition with real-time processing and anti-spoofing mechanisms.",
-      techStack: ["Python", "Face Recognition", "SQLite", "Tkinter"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      category: "Computer Vision",
-    },
-    {
-      title: "Predictive Healthcare Analytics",
-      description: "Machine learning platform for predicting patient outcomes and optimizing treatment plans using historical medical data.",
-      techStack: ["Python", "XGBoost", "Streamlit", "PostgreSQL"],
-      github: "https://github.com",
-      demo: "https://demo.com",
-      category: "Healthcare AI",
+      title: "Weather Forecast App",
+      description: "Modern weather application providing real-time weather data, 7-day forecasts, and location-based services with beautiful UI and responsive design.",
+      techStack: ["React", "OpenWeather API", "Tailwind CSS", "Geolocation API"],
+      github: "https://github.com/lokeshyadla",
+      demo: "https://weather-forecast-demo.netlify.app",
+      category: "Frontend",
     },
   ];
 
@@ -64,7 +40,7 @@ const Projects = () => {
             </h2>
             <div className="w-24 h-1 gradient-bg mx-auto rounded-full mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A showcase of my technical projects demonstrating AI/ML expertise and problem-solving skills
+              A showcase of my web development projects demonstrating MERN stack expertise and modern web technologies
             </p>
           </div>
 
