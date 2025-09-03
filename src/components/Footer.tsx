@@ -83,7 +83,7 @@ const Footer = () => {
           {/* Bottom Section */}
           <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <div className="text-muted-foreground text-sm mb-4 md:mb-0">
-              © 2024 Lokesh Yadla. All rights reserved.
+              © 2025 Lokesh Yadla. All rights reserved.
             </div>
             
             <div className="text-muted-foreground text-sm">

@@ -40,7 +40,7 @@ const Hero = () => {
           </h2>
           
           <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            MERN Stack Developer | Web Development Enthusiast | CGPA: 7.5/10
+            Web Developer | Web Development Enthusiast | CGPA: 7.5/10
           </p>
 
           {/* CTA Buttons */}

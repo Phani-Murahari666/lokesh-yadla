@@ -4,27 +4,21 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Web Application",
-      description: "Full-stack e-commerce platform built with MERN stack featuring user authentication, product catalog, shopping cart, and payment integration with Stripe.",
-      techStack: ["React", "Node.js", "Express", "MongoDB", "Stripe API", "JWT"],
-      github: "https://github.com/lokeshyadla",
-      demo: "https://ecommerce-demo.netlify.app",
-      category: "Full Stack",
-    },
-    {
-      title: "Task Management Dashboard",
-      description: "Responsive task management application with real-time updates, drag-and-drop functionality, and team collaboration features built using React and Firebase.",
-      techStack: ["React", "Firebase", "Material-UI", "React DnD", "Context API"],
-      github: "https://github.com/lokeshyadla",
-      demo: "https://taskmanager-demo.netlify.app",
+      title: "Weather App",
+      description: "Modern weather application providing real-time weather data and forecasts with beautiful UI and responsive design.",
+      techStack: ["HTML", "CSS", "JavaScript", "OpenWeather API"],
       category: "Frontend",
     },
     {
-      title: "Weather Forecast App",
-      description: "Modern weather application providing real-time weather data, 7-day forecasts, and location-based services with beautiful UI and responsive design.",
-      techStack: ["React", "OpenWeather API", "Tailwind CSS", "Geolocation API"],
-      github: "https://github.com/lokeshyadla",
-      demo: "https://weather-forecast-demo.netlify.app",
+      title: "To-Do List",
+      description: "Interactive task management application with add, delete, and mark complete functionality using local storage.",
+      techStack: ["HTML", "CSS", "JavaScript", "Local Storage"],
+      category: "Frontend",
+    },
+    {
+      title: "SignIn/SignUp Forms",
+      description: "Responsive user authentication forms with validation, modern design and smooth animations.",
+      techStack: ["HTML", "CSS", "JavaScript", "Form Validation"],
       category: "Frontend",
     },
   ];
@@ -90,13 +84,6 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* View More Projects */}
-          <div className="text-center mt-12">
-            <Button variant="hero" size="lg" className="group">
-              <Eye className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              View All Projects on GitHub
-            </Button>
-          </div>
         </div>
       </div>
     </section>
