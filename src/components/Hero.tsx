@@ -36,7 +36,7 @@ const Hero = () => {
           </h1>
           
           <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-4">
-            B.Tech Student • Class of 2027
+            B.Tech Student • Graduation 2027
           </h2>
           
           <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

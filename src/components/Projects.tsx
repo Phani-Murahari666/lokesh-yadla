@@ -83,31 +83,6 @@ const Projects = () => {
                   </div>
                 </div>
 
-                {/* Project Links */}
-                <div className="flex space-x-3">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 group/btn hover:gradient-bg hover:text-white hover:border-transparent"
-                    asChild
-                  >
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github size={16} className="mr-2 group-hover/btn:scale-110 transition-transform" />
-                      Code
-                    </a>
-                  </Button>
-                  <Button
-                    variant="gradient"
-                    size="sm"
-                    className="flex-1 group/btn"
-                    asChild
-                  >
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink size={16} className="mr-2 group-hover/btn:scale-110 transition-transform" />
-                      Live Demo
-                    </a>
-                  </Button>
-                </div>
 
                 {/* Hover Effect */}
                 <div className="absolute inset-0 gradient-subtle opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none"></div>

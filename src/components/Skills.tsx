@@ -4,6 +4,31 @@ const Skills = () => {
   const [activeCategory, setActiveCategory] = useState("frontend");
 
   const skillCategories = {
+    programming: {
+      title: "Programming Languages",
+      skills: [
+        { 
+          name: "JavaScript", 
+          level: 90,
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        },
+        { 
+          name: "Java", 
+          level: 85,
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+        },
+        { 
+          name: "Python", 
+          level: 80,
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+        },
+        { 
+          name: "C", 
+          level: 75,
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+        },
+      ],
+    },
     frontend: {
       title: "Frontend Development",
       skills: [
@@ -11,11 +36,6 @@ const Skills = () => {
           name: "React", 
           level: 85,
           logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-        },
-        { 
-          name: "JavaScript", 
-          level: 90,
-          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
         },
         { 
           name: "HTML5", 
@@ -30,7 +50,7 @@ const Skills = () => {
         { 
           name: "Tailwind CSS", 
           level: 85,
-          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
         },
         { 
           name: "Bootstrap", 
@@ -171,7 +191,7 @@ const Skills = () => {
 
           {/* Category Selector */}
           <div className="flex justify-center mb-12">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-2 card-glass rounded-2xl">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 p-2 card-glass rounded-2xl">
               {Object.entries(skillCategories).map(([key, category]) => (
                 <button
                   key={key}

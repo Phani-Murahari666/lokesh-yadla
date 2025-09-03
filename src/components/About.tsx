@@ -22,19 +22,13 @@ const About = () => {
                 <p>
                   I'm a dedicated B.Tech student at GIET Engineering College, Rajahmundry, graduating in 2027. 
                   With a strong academic performance (CGPA: 7.5/10), I'm passionate about web development 
-                  and the MERN stack, constantly working to build innovative web applications.
+                  and the MERN stack, building innovative web applications.
                 </p>
                 
                 <p>
-                  My journey in web development focuses on creating responsive, user-friendly applications 
-                  using modern technologies. I've completed 2+ projects and am continuously expanding my 
-                  skills in full-stack development, always eager to learn new technologies and frameworks.
-                </p>
-                
-                <p>
-                  When I'm not coding, you'll find me exploring new web technologies, working on personal projects, 
-                  or contributing to the developer community. I believe in writing clean, maintainable code and 
-                  staying updated with the latest trends in web development.
+                  I focus on creating responsive, user-friendly applications using modern technologies. 
+                  I've completed 2+ projects and continuously expand my skills in full-stack development, 
+                  always eager to learn new technologies and frameworks.
                 </p>
               </div>
 
