@@ -56,31 +56,13 @@ const About = () => {
             {/* Visual Elements */}
             <div className="animate-scale-in">
               <div className="relative">
-                {/* Main card */}
-                <div className="card-glass p-8 rounded-2xl shadow-card">
-                  <h4 className="text-xl font-semibold mb-4 gradient-text">Technical Focus</h4>
-                  <ul className="space-y-3">
-                    <li className="flex items-center text-muted-foreground">
-                      <div className="w-2 h-2 gradient-bg rounded-full mr-3"></div>
-                      MERN Stack Development
-                    </li>
-                    <li className="flex items-center text-muted-foreground">
-                      <div className="w-2 h-2 gradient-bg rounded-full mr-3"></div>
-                      Responsive Web Design
-                    </li>
-                    <li className="flex items-center text-muted-foreground">
-                      <div className="w-2 h-2 gradient-bg rounded-full mr-3"></div>
-                      RESTful API Development
-                    </li>
-                    <li className="flex items-center text-muted-foreground">
-                      <div className="w-2 h-2 gradient-bg rounded-full mr-3"></div>
-                      Database Management
-                    </li>
-                    <li className="flex items-center text-muted-foreground">
-                      <div className="w-2 h-2 gradient-bg rounded-full mr-3"></div>
-                      Modern JavaScript Frameworks
-                    </li>
-                  </ul>
+                {/* Profile image placeholder */}
+                <div className="card-glass p-8 rounded-2xl shadow-card text-center">
+                  <div className="w-32 h-32 gradient-bg rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-4xl font-bold text-white">LY</span>
+                  </div>
+                  <h4 className="text-xl font-semibold gradient-text">Web Developer</h4>
+                  <p className="text-muted-foreground mt-2">Building innovative solutions</p>
                 </div>
 
                 {/* Floating elements */}

@@ -19,10 +19,12 @@ const Resume = () => {
 
           {/* Download Resume Button */}
           <div className="text-center mb-12">
-            <Button variant="hero" size="lg" className="group">
-              <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-              Download Resume
-            </Button>
+            <a href="/sample-resume.pdf" download="Lokesh_Yadla_Resume.pdf">
+              <Button variant="hero" size="lg" className="group">
+                <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+                Download Resume
+              </Button>
+            </a>
           </div>
 
           {/* Education Summary */}

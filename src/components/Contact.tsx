@@ -1,39 +1,52 @@
-import { useState } from "react";
 import { Send, Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  
+  // React Hook Form setup with Web3Forms integration
+  const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm();
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message sent successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+  const onSubmit = async (data: any) => {
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: "YOUR_ACCESS_KEY_HERE", // You'll replace this with actual key later
+          name: data.name,
+          email: data.email,
+          message: data.message,
+          from_name: "Portfolio Contact Form",
+          subject: "New Contact Form Submission"
+        })
       });
-      setFormData({ name: "", email: "", message: "" });
-      setIsSubmitting(false);
-    }, 1000);
-  };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+      const result = await response.json();
+      
+      if (result.success) {
+        toast({
+          title: "Message sent successfully!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+        reset();
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      toast({
+        title: "Error sending message",
+        description: "Please try again later or contact me directly via email.",
+        variant: "destructive",
+      });
+    }
   };
 
   const contactInfo = [
@@ -156,21 +169,19 @@ const Contact = () => {
               <div className="card-glass p-8 rounded-2xl shadow-card">
                 <h3 className="text-2xl font-semibold mb-6 gradient-text">Send me a message</h3>
                 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                       Your Name
                     </label>
                     <Input
                       id="name"
-                      name="name"
                       type="text"
-                      required
-                      value={formData.name}
-                      onChange={handleChange}
+                      {...register("name", { required: "Name is required" })}
                       className="w-full"
                       placeholder="Enter your full name"
                     />
+                    {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message as string}</p>}
                   </div>
 
                   <div>
@@ -179,14 +190,12 @@ const Contact = () => {
                     </label>
                     <Input
                       id="email"
-                      name="email"
                       type="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
+                      {...register("email", { required: "Email is required" })}
                       className="w-full"
                       placeholder="Enter your email address"
                     />
+                    {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message as string}</p>}
                   </div>
 
                   <div>
@@ -195,14 +204,12 @@ const Contact = () => {
                     </label>
                     <Textarea
                       id="message"
-                      name="message"
-                      required
-                      value={formData.message}
-                      onChange={handleChange}
+                      {...register("message", { required: "Message is required" })}
                       rows={5}
                       className="w-full"
                       placeholder="Tell me about your project or just say hello..."
                     />
+                    {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message as string}</p>}
                   </div>
 
                   <Button

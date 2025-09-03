@@ -34,9 +34,9 @@ const Footer = () => {
                 Always excited to learn, collaborate, and create innovative solutions.
               </p>
               <div className="flex items-center text-muted-foreground">
-                <span>Made with</span>
+                <span>Crafted with</span>
                 <Heart size={16} className="mx-2 text-red-500 animate-pulse" />
-                <span>using React & Tailwind CSS</span>
+                <span>passion and dedication</span>
               </div>
             </div>
 
@@ -87,8 +87,7 @@ const Footer = () => {
             </div>
             
             <div className="text-muted-foreground text-sm">
-              <span>Built with modern technologies | </span>
-              <span className="gradient-text font-medium">Open Source</span>
+              <span className="gradient-text font-medium">Portfolio Showcase</span>
             </div>
           </div>
         </div>
